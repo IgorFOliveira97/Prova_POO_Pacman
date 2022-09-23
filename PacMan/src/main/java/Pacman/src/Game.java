@@ -11,7 +11,7 @@ public class Game extends JFrame implements KeyListener {
 
 	private static final long serialVersionUID = 1L;
 	private Player player = new Player(50, 50, 180);
-	private Ghost ghost1 = new Ghost(0,0,0);
+	private Ghost ghost12 = new Ghost(0,0,0);
 	private Ghost ghost2 = new Ghost(500,0,0);
 	private Ghost ghost3 = new Ghost(0,500,0);
 	private Ghost ghost4 = new Ghost(500,500,0);
@@ -38,7 +38,7 @@ public class Game extends JFrame implements KeyListener {
 		player.setScreenSize(SCREENSIZE);
 		player.setLife(15);
 
-		ghost1.setScreenSize(SCREENSIZE);
+		ghost12.setScreenSize(SCREENSIZE);
 		ghost2.setScreenSize(SCREENSIZE);
 		ghost3.setScreenSize(SCREENSIZE);
 		ghost4.setScreenSize(SCREENSIZE);
@@ -63,7 +63,7 @@ public class Game extends JFrame implements KeyListener {
 	private void render() {
 		
 		updateLocation(imgPlayer, player);
-		updateLocation(imgGhost1, ghost1);
+		updateLocation(imgGhost1, ghost12);
 		updateLocation(imgGhost2, ghost2);
 		updateLocation(imgGhost3, ghost3);
 		updateLocation(imgGhost4, ghost4);
